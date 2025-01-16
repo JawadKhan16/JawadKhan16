@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jawad Khan | Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1, h2, h3 {
+            color: #00adb5;
+        }
+
+        a {
+            color: #00adb5;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        button, .btn {
+            background-color: #00adb5;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover, .btn:hover {
+            background-color: #007b7f;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, #000000, #333333);
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin: 10px 0 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            font-size: 1.2rem;
+        }
+
+        /* Sections */
+        section {
+            padding: 50px 0;
+        }
+
+        section#about ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        section#about ul li {
+            margin: 10px 0;
+        }
+
+        .project {
+            margin-top: 20px;
+            padding: 20px;
+            background: #1f1f1f;
+            border-radius: 8px;
+        }
+
+        /* Contact Form */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin: 10px 0 5px;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            background: #222;
+            color: #ffffff;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #00adb5;
+            margin-bottom: 15px;
+        }
+
+        form button {
+            align-self: flex-start;
+        }
+
+        .resume-download {
+            margin-top: 20px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000000;
+            color: #777;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1.2rem;
+            }
+
+            nav ul li a {
+                font-size: 1rem;
+            }
+        }
+        section#about li strong {
+    color: #00adb5;  /* Matching color for Education, Certifications, and Hobbies */
+}
+
+
+/* Project Section */
+#projects {
+    padding: 50px 0;
+}
+
+.project-description {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-description h3 {
+    color: #00adb5;
+    margin-bottom: 10px;
+}
+
+.project-description p {
+    color: #ccc;
+    font-size: 1rem;
+}
+
+.project-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.project-images img {
+    width: 300px; /* Adjust as per requirement */
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #444;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+    </style>
+
+    <!-- Add EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Home Section -->
+    <header id="home">
+        <div class="container">
+            <img src="profilepic.jpeg" alt="Jawad Khan">
+            <h1>Jawad Khan</h1>
+            <p>Aspiring Full Stack Developer | Fresher</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Technical-Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a recent graduate in Business Administration and Computer Applications with a passion for software development. I have developed projects like MoneyMap, an Android-based expense tracker, and possess skills in Java, Firebase, and web development technologies.</p>
+            <ul>
+                <li><strong>Education:</strong></li>
+                <li>Pune University, Pune, India</li>
+                <li>Bachelor of Business Administration and Computer Application - July 2023</li>
+                <li>Percentage: 82.90%</li>
+                <li>Maharashtra State Board, Pune, India</li>
+                <li>HSC (12th) - Mar 2020</li>
+                <li>Percentage: 68.92%</li>
+                <li>SSC (10th) - Mar 2018</li>
+                <li>Percentage: 72.40%</li>
+                <li><strong>Certifications:</strong> <br>Python for Data Science (NPTEL, IIT Madras),<br>
+                     Front End Development (IBM SkillsBuild),<br>Google Cloud Computing(IIt Kharagpur)</li>
+                <li><strong>Hobbies:</strong> <br>Trekking, Photography, Editing</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-description">
+                <h3>MoneyMap – Expense Tracker</h3>
+                <p>An Android application for managing income and expenses, featuring analytics, category management, and Firebase integration.</p>
+            </div>
+            <div class="project-images">
+                <img src="dashboard.jpeg" alt="MoneyMap Dashboard" />
+                <img src="analitycs.jpeg" alt="MoneyMap Analytics" />
+                <img src="settings.jpeg" alt="MoneyMap Settings" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Programming Language:</strong> C, C++, Java, Python</li>
+                <li><strong>Web Technologies:</strong> HTML, CSS</li>
+                <li><strong>Database:</strong> MySQL</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form" action="https://formspree.io/f/xqaawlro" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <button type="submit" onclick="sendEmail()">Send</button>
+            </form>
+        </div>
+    </section>
+
+    
+    <!-- Resume Download Link -->
+    <div class="resume-download">
+        <a href="C:\Users\junaid khan\Downloads\JAWAD-KHAN-RESUME.pdf" target="_blank" class="btn">Download My Resume</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Jawad Khan. All rights reserved.</p>
+    </footer>
+
+    <script>
+    // Add an event listener to clear the form after submission
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', (event) => {
+        // Allow the form to submit normally
+        setTimeout(() => {
+            form.reset(); // Clear the form
+        }, 1000); // Add a slight delay to ensure the form is submitted
+    });
+</script>
+    
+</body>
+</html>
